@@ -248,9 +248,52 @@ section {
   letter-spacing: 0.02em;
 }
 
+.mail-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 16px;
+  height: 12px;
+  fill: var(--main-text-cl);
+}
+
+.tel-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 10px;
+  height: 16px;
+  fill: var(--main-text-cl);
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  fill: var(--accent-cl);
+}
+
+.contact-item:hover .mail-icon,
+.contact-item:focus .mail-icon {
+  fill: var(--accent-cl);
+}
+
+.contact-item:hover .tel-icon,
+.contact-item:focus .tel-icon {
+  fill: var(--accent-cl);
+}
+
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-content {
@@ -419,6 +462,7 @@ section {
 .clients-icons-link:focus .clients-icons-svg {
   fill: var(--accent-cl);
 }
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -482,7 +526,7 @@ section {
 .social-icons-svg-footer {
   width: 20px;
   height: 20px;
-  fill: var(--icons-bg);
+  fill: var(--white);
 }
 
 .social-icons-link-footer:hover,
@@ -490,10 +534,10 @@ section {
   background-color: var(--accent-cl);
 }
 
-.social-icons-link-footer:hover .social-icons-svg-footer,
+/* .social-icons-link-footer:hover .social-icons-svg-footer,
 .social-icons-link-footer:focus .social-icons-svg-footer {
   fill: var(--white);
-}
+} */
 
 .dark-bg {
   background-color: var(--dark-bg);

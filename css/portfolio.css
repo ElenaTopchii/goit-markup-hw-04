@@ -219,6 +219,45 @@ section {
   letter-spacing: 0.02em;
 }
 
+.mail-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 16px;
+  height: 12px;
+  fill: var(--main-text-cl);
+}
+
+.tel-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 10px;
+  height: 16px;
+  fill: var(--main-text-cl);
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  fill: var(--accent-cl);
+}
+
+.contact-item:hover .mail-icon,
+.contact-item:focus .mail-icon {
+  fill: var(--accent-cl);
+}
+
+.contact-item:hover .tel-icon,
+.contact-item:focus .tel-icon {
+  fill: var(--accent-cl);
+}
+
 .portfolio-nav {
   background-color: #ffffff;
   border-top: 1px solid #ececec;
@@ -252,6 +291,12 @@ section {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
+}
+
+.project-item:active,
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .project-item:nth-child(3n) {
@@ -315,6 +360,49 @@ section {
 .footer-contact .footer-contact-item:not(:last-child) {
   margin-bottom: 9px;
 }
+
+.join {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white);
+}
+
+.social-icons-footer {
+  display: flex;
+}
+
+.social-icons-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social-icons-svg-footer {
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+}
+
+.social-icons-link-footer:hover,
+.social-icons-link-footer:focus {
+  background-color: var(--accent-cl);
+}
+
+/* .social-icons-link-footer:hover .social-icons-svg-footer,
+.social-icons-link-footer:focus .social-icons-svg-footer {
+  fill: var(--white);
+} */
 
 .dark-bg {
   background-color: var(--dark-bg);
